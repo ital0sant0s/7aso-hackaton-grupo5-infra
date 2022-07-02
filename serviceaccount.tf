@@ -13,7 +13,7 @@ data "google_iam_policy" "admin" {
 }
 
 resource "google_service_account" "sa" {
-  account_id   = "terraform"
+  account_id   = "terraform-2"
   display_name = "Conta de serviço para criação da infraestrutura."
 }
 
