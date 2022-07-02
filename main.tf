@@ -1,5 +1,5 @@
 resource "google_sql_database_instance" "main" {
-  name             = "dbmysql-spotmusic-7aso-hackaton-grupo5"
+  name             = var.db_instance_name
   database_version = "MYSQL_8_0"
   region           = "us-central1"
 
