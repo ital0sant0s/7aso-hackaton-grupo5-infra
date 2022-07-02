@@ -1,3 +1,9 @@
+variable "db_instance_name" {
+  type    = string
+  description = "(Required) The name of the instance."
+  default = "db-mysql-spotmusic-7aso-hackaton-grupo5-9182jiads"
+}
+
 variable "db_user_name" {
   type    = string
   description = "(Required) The name of the user. Changing this forces a new resource to be created."
