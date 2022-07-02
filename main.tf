@@ -9,3 +9,10 @@ resource "google_sql_database_instance" "main" {
     tier = "db-n1-standard-1"
   }
 }
+
+resource "google_sql_user" "users" {
+  name     = "backendspotmusic"
+  instance = google_sql_database_instance.main.name
+  host     = "%"
+  password = var.db_user_password
+}
